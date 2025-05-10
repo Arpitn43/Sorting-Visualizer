@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    ******************
+    || IMPLEMENTED BY - ARPIT NAGAR || 
+    ******************
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Sorting Visualiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="header-left">
+                    <div class="size">
+                        <p>Array Size</p>
+                        <input id="a_size" type="range" min=20 max=150 step=1 value=30>
+                    </div>
+                    <div class="speed">
+                        <p>Sorting Speed</p>
+                        <input id="a_speed" type="range" min=1 max=5 step=1 value=3>
+                    </div>
+                    <button id="a_generate" class="button-37">Generate New Array!</button>
+                </div>
+                <div class="header-right">
+                    <div class="nav-heading">Sorting-Visualiser</div>
+                    
+                        <div class="algos">
+                            <button >Bubble Sort</button>
+                            <button >Selection Sort</button>
+                            <button >Insertion Sort</button>
+                            <button >Merge Sort</button>
+                            <button >Quick Sort</button>
+                            <button class="button-37">Heap Sort</button>
+                        </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <section>
+
+            <div class="info-cont1">
+
+                <h2 id="AlgoName"></h2>
+                <p class="algo_desc"></p>
+  
+            </div>
+
+            <div id="array_container">
+            </div>
+
+            <div class="info-cont2">
+                
+                <ul class="Complexity-container" id="Time_Complexity_Types_Container">
+                        <li> 
+                            <div class="comp-title">TIME COMPLEXITY:</div>
+                            <ul>
+                                <li>Worst case: <span  id="Time_Worst"  class="Sub_Heading"></span></li>
+                                <li >Average case: <span  id="Time_Average" class="Sub_Heading"></span></li>
+                                <li >Best case: <span  id="Time_Best" class="Sub_Heading"></span></li>
+                            </ul>
+                        </li> 
+                        <br>  
+                        <li>
+                            <div class="comp-title">SPACE COMPLEXITY:</div>
+                            <ul>
+                                <li >Worst case: <span  id="Space_Worst" class="Sub_Heading"></span></li>   
+                            </ul>   
+                        </li>
+
+                </ul>
+                
+
+                
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="visualization.js"></script>
+    <script src="bubble_sort.js"></script>
+    <script src="heap_sort.js"></script>
+    <script src="selection_sort.js"></script>
+    <script src="merge_sort.js"></script>
+    <script src="insertion_sort.js"></script>
+    <script src="quick_sort.js"></script>
+</body>
+<!--
+    ******************
+    || IMPLEMENTED BY - ARPIT NAGAR || 
+    ******************
+ -->
+</html>
